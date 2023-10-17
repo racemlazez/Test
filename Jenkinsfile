@@ -7,7 +7,7 @@ pipeline {
         stage('Clone Repo') {
             
                 git branch: 'main', url: 'https://github.com/racemlazez/Test.git'
-            }
+            
         }
     }}
     
