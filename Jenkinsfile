@@ -9,7 +9,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/racemlazez/Test.git'
             }
         }
-    }
+    }}
     
   stage('Dependency Check Report') {
                     dependencyCheck additionalArguments: ''' 
@@ -21,4 +21,3 @@ pipeline {
                     } 
 
     
-}
