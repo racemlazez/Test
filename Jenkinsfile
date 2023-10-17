@@ -11,13 +11,6 @@ pipeline {
         }
     }}
     
-  stage('Dependency Check Report') {
-                    dependencyCheck additionalArguments: ''' 
-                    -o "./" 
-                    -s "./"
-                    -f "ALL" 
-                    --prettyPrint''', odcInstallation: 'dependencyCheck'
-                    dependencyCheckPublisher pattern: 'dependency-check-report.xml'
-                    } 
+ 
 
     
